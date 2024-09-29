@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Swaathi's Art Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    
+  </head>
+  <body class="art">
+    
+    <!-- //  INTRO  // -->
+    <header>
+      <!-- Start content edits below this line. -->
+      <div class="art-wrapper">
+      <h1>Palette of Imagination
+
+      </h1>
+      <h2>Art is my passion! Explore my diverse range of artwork, from pencil shading to oil pastels to acrylic painting.Thank you for visiting my art page! 🎨</h2>
+      </div>
+      <!-- End content edits here. -->
+    </header>
+
+    <!-- Image Gallery -->
+     <div class="full-img" id="fullImgBox">
+      <img src="images/muruga.jpg" id="fullImg">
+      <span onclick="closeFullImg()">X</span>
+     </div>
+
+    <div class ="img-gallery">
+      <img src="images/Lord-ganesh.jpg" alt="Lord Ganesh" onclick="openFullImg(this.src)">
+      <img src="images/mickey-mouse.jpg" alt="Mickey Mouse" onclick="openFullImg(this.src)">
+      <img src="images/Autumn-Landscape.jpeg" alt="Autumn Landscape" onclick="openFullImg(this.src)">
+      <img src="images/sunflower-field.jpg" alt="Sunflower Field" onclick="openFullImg(this.src)">
+      <img src="images/forest-scenery.jpg" alt="Forest Scenery" onclick="openFullImg(this.src)">
+      <img src="images/mandala-art.jpg" alt="Mandala art" onclick="openFullImg(this.src)">
+      <img src="images/ramar-update.jpg" alt="Ayodhi Ramar" onclick="openFullImg(this.src)">
+      <img src="images/Radha-Krishna.jpeg" alt="Radha Krishna" onclick="openFullImg(this.src)">
+      <img src="images/Sita-Ram.jpeg" alt="Sita Ram" onclick="openFullImg(this.src)">
+      <img src="images/mountain-scenery.jpg" alt="Mountain Scenery" onclick="openFullImg(this.src)">
+      <img src="images/blue-scenery.jpg" alt="Blue Scenery" onclick="openFullImg(this.src)">
+      <img src="images/River.jpg" alt="River" onclick="openFullImg(this.src)">
+      <img src="images/muruga.jpg" alt="Muruga" onclick="openFullImg(this.src)">
+      <img src="images/radha-krishna-pencil.jpg" alt="Radha Krishna - Pencil Sketch" onclick="openFullImg(this.src)">
+      <img src="images/apj.jpg" alt="APJ Abdul Kalam" onclick="openFullImg(this.src)">
+      
+      
+    </div>
+
+    <script>
+      var fullImgBox = document.getElementById("fullImgBox");
+      var fullImg = document.getElementById("fullImg");
+
+      function openFullImg(pic) {
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+      }
+
+      function closeFullImg() {
+        fullImgBox.style.display = "none";
+      }
+    </script>
+
+    
+    <!-- Menu button -->
+   <label>
+    <input type="checkbox" id="menu-toggle">
+    <div class="toggle">
+      <span class="top_line common"></span>
+      <span class="middle_line common"></span>
+      <span class="bottom_line common"></span>
+    </div>
+    <div class="slide2">
+      <h1>MENU</h1>
+      <ul>
+        <li><a href='index.html'><i class="fas fa-user-circle"></i>Dashboard</a></li>
+        <li><a href="resume.html"><i class="fas fa-file-alt"></i>Resume</a></li>
+        <li><a href="youtube.html"><i class="fas fa-music"></i>Music</a></li>
+        <li><a href="drawings.html"><i class="fas fa-palette"></i>Art</a></li>
+      </ul>
+    </div>
+   </label>
+
+
+   
+
+    <!-- //  FOOTER INFO, SOCIAL MEDIA  // -->
+    <footer>
+      <!-- Start content edits below this line. -->
+      <p>© 2024 by Swaathi B | <a href="mailto:email@example.com">swaathi1409@gmail.com</a></p>
+
+      <!-- Add or remove any networks. -->
+      <ul class="socials">
+        <li>
+          <a href="https://www.linkedin.com/in/swaathi-b-/" target="_blank"><img src="images/icon-logo-linkedin.png" alt="My LinkedIn Profile"> </a>
+        </li>
+        <li>
+          <a href="https://medium.com/@swaathi1409" target="_blank"><img src="images/med try.png" alt="Medium"> </a>
+        </li>
+        <li>
+          <a href="https://youtube.com/@swaathiragas?si=Dc2P6V9DpY0NkwGG" target="_blank"><img src="images/icon-logo-youtube.png" alt="My YouTube Channel"></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/swaathi1409/" target="_blank"><img src="images/icon-logo-instagram.png" alt="My Instagram"></a>
+        </li>
+      </ul>
+      
+      <!-- End content edits here. -->
+    </footer>
+  </body>
+</html>
