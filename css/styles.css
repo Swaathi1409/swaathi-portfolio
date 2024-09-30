@@ -573,6 +573,31 @@ input:checked ~ .slide {
     display: block;
     height: 300px;
 }
+
+/* Tablet (768px and up) */
+@media (max-width: 1024px) {
+    .youtube header::before {
+        background-size: 800px; /* Adjust the background size for tablets */
+        height: 250px; /* Reduce height for tablets */
+    }
+}
+
+/* Phone (below 768px) */
+@media (max-width: 768px) {
+    .youtube header::before {
+        background-size: 600px; /* Smaller background size for phones */
+        height: 200px; /* Reduce height further for phones */
+    }
+}
+
+/* Small phones (below 480px) */
+@media (max-width: 480px) {
+    .youtube header::before {
+        background-size: 400px; /* Adjust the size for small phones */
+        height: 150px; /* Further reduce height for small screens */
+    }
+}
+
 yt-section {
     margin-bottom: 50px;
 }
@@ -781,6 +806,8 @@ button{
     }
 }
 
+
+
 /*Languages
 ----------------------------------------*/
 
@@ -897,6 +924,31 @@ button{
     display: block;
     height: 250px;
 }
+
+/* Tablet (768px and up) */
+@media (max-width: 1024px) {
+    .art header::before {
+        background-size: contain; /* Adjust based on how you want it to appear */
+        height: 200px; /* Reduce height for tablets */
+    }
+}
+
+/* Phone (below 768px) */
+@media (max-width: 768px) {
+    .art header::before {
+        background-size: contain; /* Use `contain` to ensure it fits smaller screens */
+        height: 150px; /* Reduce height further for phones */
+    }
+}
+
+/* Small phones (below 480px) */
+@media (max-width: 480px) {
+    .art header::before {
+        background-size: contain; /* Adjust as per design requirement */
+        height: 120px; /* Reduce height even more for small screens */
+    }
+}
+
 /* FOOTER
 ---------------------------------------*/
 footer{
