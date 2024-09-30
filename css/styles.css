@@ -309,8 +309,6 @@ input:checked ~ .slide1 {
         padding-bottom: 10px;
         padding-right:50px;
         text-align: center;
-        padding: 50px, 0;
-        padding-right: 30px;
         pointer-events: none;
     }
 }
@@ -333,6 +331,8 @@ input:checked ~ .slide2 {
 
 
 
+
+
 /* HOME
 ---------------------------------------*/
 .home{
@@ -350,13 +350,36 @@ input:checked ~ .slide2 {
     padding: 30px;
 }
 
+/* Tablet view (up to 768px) */
+@media (max-width: 768px) {
+    .home {
+        background-position: top;
+        background-size: cover;
+    }
+    .content-bg {
+        padding: 20px;
+    }
+}
+
+/* Mobile view (up to 480px) */
+@media (max-width: 480px) {
+    .home {
+        background-position: top;
+        background-size: contain; /* Adjust the size for smaller screens */
+    }
+    .content-bg {
+        padding: 15px;
+    }
+}
+
 /* Menu - Home*/
 
 .slide{
     box-sizing: border-box;
-    /*height: 100vh;*/
+    height: 100vh;
+    max-height: 100vh;
     width: 200px;
-    position: absolute;
+    position: fixed;
     top:0px;
     left:0;
     background-color: #222;
@@ -366,6 +389,7 @@ input:checked ~ .slide2 {
     transform: translateX(-200px);
     z-index:999;
     min-height: 105vh;
+    overflow: auto;
     h1{
         color:#bcaa96;
         font-family: 'Caveat', cursive;
@@ -419,7 +443,7 @@ ul li a i{
 }
 
 .toggle {
-    position: absolute;
+    position: fixed;
     height: 30px;
     width:30 px;
     top:20px;
@@ -518,7 +542,13 @@ input:checked ~ .slide {
     background: rgb(255 255 255 / 0.9);
     padding: 30px;
 }
-
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+    .home {
+        background-size: cover; /* Adjust to 'contain' for smaller screens */
+        background-position: center; /* Center the image */
+    }
+}
 
 
 
@@ -630,6 +660,25 @@ yt-section {
 .yt-summary p:first-child{
     margin-top: 0;
 }
+
+.project-item img {
+    width: 100%; /* Image will take up 100% of its container's width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 250px; /* Maximum width to avoid excessive scaling */
+  }
+  
+  @media (max-width: 768px) {
+    .project-item img {
+      max-width: 100%; /* On smaller screens, allow the image to be full width */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .project-item img {
+      max-width: 100%; /* For mobile devices, allow images to scale to the container */
+    }
+  }
+  
 
 /* YouTube Filter
 ---------------------------------------*/
@@ -754,7 +803,9 @@ button{
     margin: 30px 0;
 }
 .project-item img{
-    width: 300px;    
+    width: 300px; 
+    height: 200px;
+    object-fit: cover;
 }
 
 @media screen and (min-width: 860px) {
@@ -764,6 +815,8 @@ button{
     .project-item img{
         float: left;
         margin-right: 20px;
+        max-width: 100%;
+        height: auto;
     }
 }
 
@@ -775,12 +828,14 @@ button{
     }
     .project-item img {
         width: 100%;
+        height: auto;
     }
 }
 
 @media screen and (max-width: 500px){
     .project-item img {
         width: 100%;
+        height: auto;
         margin-bottom: 10px;
     }
 }
