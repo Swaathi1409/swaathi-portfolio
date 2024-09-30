@@ -243,7 +243,7 @@ input:checked ~ .toggle .middle_line {
     /* Adjust for phones */
     @media (max-width: 480px) {
         display: block; /* Show the button on a separate line on phones */
-        margin: 3px 0; /* Add some spacing */
+        margin: 2px 0; /* Add some spacing */
     }    
 }
 
