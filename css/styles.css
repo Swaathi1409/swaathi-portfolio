@@ -534,23 +534,56 @@ yt-section {
     margin-top: 0;
 }
 
-.project-item img {
-    width: 100%; /* Image will take up 100% of its container's width */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 250px; /* Maximum width to avoid excessive scaling */
+.project-item {
+    display: block;
+    width: 100%; /* Full width container */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
   }
   
+  .project-item img {
+    display: block;
+    width: 100%; /* Ensure the image takes full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it scales down appropriately */
+    object-fit: contain; /* Ensure the full image is visible within the container */
+    overflow: hidden;
+  }
+  
+  /* Media query for tablet and smaller devices */
   @media (max-width: 768px) {
     .project-item img {
-      max-width: 100%; /* On smaller screens, allow the image to be full width */
+      width: 100%;
+      height: auto; /* Maintain the aspect ratio */
+      object-fit: contain; /* Make sure the whole image is visible */
+    }
+  }
+  
+  /* Media query for mobile screens */
+  @media (max-width: 480px) {
+    .project-item img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+  
+  
+  
+  /*
+  @media (max-width: 768px) {
+    .project-item img {
+      max-width: 100%; /* On smaller screens, allow the image to be full width 
     }
   }
   
   @media (max-width: 480px) {
     .project-item img {
-      max-width: 100%; /* For mobile devices, allow images to scale to the container */
+      max-width: 100%; /* For mobile devices, allow images to scale to the container 
     }
-  }
+  }*/
   
 
 /* YouTube Filter
