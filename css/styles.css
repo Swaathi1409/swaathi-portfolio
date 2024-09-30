@@ -230,7 +230,7 @@ input:checked ~ .toggle .middle_line {
     left: 3%; /* Adjust this value to position the label correctly */
     transform: translateY(-50%);
     padding: 5px;
-    background-color: #90e062;
+    background-color: #95e256;
     color: #000000;
     border-radius: 5px;
     font-weight: 650;
@@ -243,7 +243,7 @@ input:checked ~ .toggle .middle_line {
     /* Adjust for phones */
     @media (max-width: 480px) {
         display: block; /* Show the button on a separate line on phones */
-        margin: 10px 0; /* Add some spacing */
+        margin: 5px 0; /* Add some spacing */
     }    
 }
 
