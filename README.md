@@ -17,18 +17,31 @@ This is a personal portfolio website created to showcase my skills, projects, an
 ## Project Structure
 
 ├── css/
+
 │ └── styles.css
+
 ├── images/
+
 │ └── (site images)
+
 ├── placeholder-images/
+
 │ └── (local placeholder images)
+
 ├── www.linkedin.com/in/
+
 │ └── (LinkedIn related files)
-├── drawings.html
+
+├── drawings.html\
+
 ├── filter.js
+
 ├── index.html
+
 ├── resume.html
+
 ├── youtube.html
+
 
 ## Updates and Commits
 
