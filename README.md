@@ -58,6 +58,26 @@ git clone https://github.com/Swaathi1409/swaathi-portfolio.git
 
 2. Open `index.html` in a web browser.
 
+## Self Portfolio Website link
+https://swaathi-portfolio.vercel.app/
+
+## Screenshots
+
+![image](https://github.com/user-attachments/assets/8f5d8ab2-0d2a-42ec-b5f8-d226b4a08287)
+
+![image](https://github.com/user-attachments/assets/4c44cc1c-8938-40f3-bf66-a4ec1dab6b42)
+
+![image](https://github.com/user-attachments/assets/051cab10-1d1a-4466-aec2-62ab1257a153)
+
+![image](https://github.com/user-attachments/assets/9a9fef4e-03db-4e2d-b850-2ad693fd5247)
+
+![image](https://github.com/user-attachments/assets/56418560-03cc-4c60-834e-3928606ce18e)
+
+![image](https://github.com/user-attachments/assets/eecc3de7-1f1e-47eb-9155-86b15a975cc2)
+
+![image](https://github.com/user-attachments/assets/b3a76569-6326-4fad-8457-7ed123a0c92c)
+
+
 ## Future Enhancements
 
 - Adding animations and transitions
