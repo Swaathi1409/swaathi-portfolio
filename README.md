@@ -30,7 +30,6 @@ This is a personal portfolio website created to showcase my skills, projects, an
 ├── resume.html
 ├── youtube.html
 
-
 ## Updates and Commits
 
 - Improved styles and responsiveness
