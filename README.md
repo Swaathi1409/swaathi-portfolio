@@ -59,7 +59,7 @@ git clone https://github.com/Swaathi1409/swaathi-portfolio.git
 2. Open `index.html` in a web browser.
 
 ## Self Portfolio Website link
-[https://swaathi-portfolio.vercel.app/](https://swaathi-self-portfolio.vercel.app/)
+https://swaathi-self-portfolio.vercel.app/
 
 ## Screenshots
 
